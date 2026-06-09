@@ -94,7 +94,7 @@ namespace SharpTimer
                 if(player.PlayerPawn.Value!.ActualMoveType.HasFlag(MoveType_t.MOVETYPE_LADDER))
                     player.PlayerPawn.Value!.VelocityModifier = 1.0f;
                 else
-                    player.PlayerPawn.Value!.VelocityModifier = (float)(forcedPlayerSpeed / weaponStats.GetSpeed(player.PlayerPawn.Value.IsWalking));
+                    player.PlayerPawn.Value!.VelocityModifier = (float)(forcedPlayerSpeed / weaponStats.Running);
             }
             catch (Exception ex)
             {
